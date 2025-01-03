@@ -1,4 +1,5 @@
 google-generativeai
+fastapi
 langchain-chroma
 langchain-community
 transformers
@@ -7,3 +8,5 @@ sentence-transformers
 uvicorn
 langchain_huggingface
 python-multipart
+pydantic
+pypdf
