@@ -1,0 +1,9 @@
+google-generativeai
+langchain-chroma
+langchain-community
+transformers
+chromadb
+sentence-transformers
+uvicorn
+langchain_huggingface
+python-multipart
