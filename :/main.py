@@ -5,28 +5,6 @@
 # ├── requirements.txt
 # └── Dockerfile
 
-# requirements.txt
-fastapi==0.104.1
-uvicorn==0.24.0
-python-multipart==0.0.6
-langchain==0.1.0
-langchain-community==0.0.10
-chromadb==0.4.18
-pydantic==2.5.2
-sentence-transformers==2.2.2
-google-generativeai==0.3.1
-
-# Dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY ./app .
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
 
 # main.py (place in /app directory)
 from fastapi import FastAPI, UploadFile, File, Form
